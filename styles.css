@@ -1,0 +1,87 @@
+body {
+    background-image: url(img/3.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    padding-top: 1rem;
+    color: white;
+}
+
+.form-tickets {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.form-control {
+    text-align: center;
+}
+
+
+.subTextarea {
+    padding-bottom: 1rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: white;
+}
+
+.btnEjecutar {
+    padding-top: 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    text-align: center;
+    width: 50px;
+}
+
+p {
+    color: #639fe2;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .btnEjecutar {
+        padding-bottom: 1.125rem;
+    }
+}
+
+#loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 5s linear infinite;
+  position: fixed;
+  left : 42%;
+  bottom : 0;
+  right : 0;
+  top : 50%;
+  display: none; /* El spinner debe estar oculto por defecto */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
